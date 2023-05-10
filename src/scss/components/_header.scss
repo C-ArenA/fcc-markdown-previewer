@@ -1,0 +1,28 @@
+.Header {
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	
+	align-items: center;
+	justify-content: space-between;
+	color: $white-color;
+	h1 {
+		font-family: $vt323;
+		font-size: 1.8rem;
+		margin: 0 30px 5px 0px;
+	}
+
+	.contact{
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.5rem;
+		p{
+			font-family: $hand;
+			
+		}
+		:hover{
+			font-size: 1.8rem;
+		}
+	}
+}

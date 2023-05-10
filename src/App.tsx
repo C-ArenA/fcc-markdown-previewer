@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import { AiFillGithub } from 'react-icons/ai'
+import Cloth from './components/Cloth'
+import Header from './components/Header'
+import Notebook from './components/Notebook'
 
 function App() {
 
 	return (
 		<div className='table'>
 			{/*Header*/}
-			<div className='cloth'><h1>Markdown Previewer</h1></div>
-			<header>
-				<h1>Markdown Previewer</h1>
-				<div className='contact'>
-					<p>Carlos Arena</p>
-					<AiFillGithub/>
-				</div>
-			</header>
+			<Cloth vw={0.3} ratio={1.6}/>
+			<Header />			
+			<Notebook />
 		</div>
 
 	)

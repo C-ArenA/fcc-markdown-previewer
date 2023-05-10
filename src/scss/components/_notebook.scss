@@ -1,0 +1,81 @@
+.Notebook{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px 30px;
+	aspect-ratio: 16/9;
+	max-height: 80vh;
+	max-width: 90vw;
+	background-color: $notebook-color;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: $main-shadow;
+}
+.MDSheet{
+	border-radius: 20px;
+	background-color: $white-color;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	flex-basis: 50%;
+	box-shadow: $left-shadow, -40px 0px 40px rgba($color: #000000, $alpha: 0.2) inset;
+}
+.editor-header{
+	display: flex;
+	font-size: 3rem;
+	align-items: center;
+	h1{
+		font-family: $kelly;
+		font-size: 2rem;
+		margin-left: 1rem;
+	}
+
+}
+.editor-wrapper{
+	margin-top: 10px;
+	height: 100%;
+	display: flex;
+	font-family: $vt323;
+	font-size: 1.1rem;
+}
+#editor-counter{
+	overflow: hidden;
+	// border-right: 1px solid #000;
+	margin-right: 10px;
+	text-align: right;
+	color: rgba($color: #000000, $alpha: 0.5);
+}
+#editor{
+	font-family: $vt323;
+	color: #555;
+	width: 100%;
+	height: 100%;
+}
+
+.HandWrittenSheet{
+	background-image: url("assets/sheetPattern.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	height: 100%;
+	
+	flex-basis: 50%;
+	border-radius: 20px;
+	box-shadow: $right-shadow, 40px 0px 40px rgba($color: #000000, $alpha: 0.2) inset;
+}
+#preview{
+	font-family: $reenie;
+	padding: 20px 30px;
+	font-size: 1.4rem;
+	h1{
+		font-size: 3rem;
+		text-decoration: underline;
+		color: #781A3A;
+		margin: 0.8rem 0;
+	}
+	ul{
+		margin: 1rem 0.5rem;
+	}
+	li{
+		list-style: circle;
+		list-style-position: inside;
+	}
+}
