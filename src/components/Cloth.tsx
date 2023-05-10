@@ -16,7 +16,6 @@ class CornerRectangle {
 		this.angle = this.calcAngle(r);
 	}
 	calcA(w: number, r: number): number {
-		const commonA = 2 * w * Math.sqrt(1 - (Math.sin(Math.atan(1 / r)) ** 2));
 		if (r > 1) {
 			return 2 * w * Math.sqrt(1 - (Math.sin(Math.atan(1 / r)) ** 2));
 		}
