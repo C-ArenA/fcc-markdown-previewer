@@ -1,0 +1,1 @@
+* One of the [easiest way of deploying to github pages](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane)

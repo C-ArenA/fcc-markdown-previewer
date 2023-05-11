@@ -1,19 +1,17 @@
-const HandWrittenSheet = () => {
-  return (
-	<div className="HandWrittenSheet">
-		<div id="preview">
-			<h1>Hola Mundo</h1>
-			<p>Yo me llamo Carlos Arena</p>
-			<p>Y ustedes?</p>
-			<p>Me gusta:</p>
-			<ul>
-				<li>Comer</li>
-				<li>Jugar</li>
-				<li>Dormir</li>
-			</ul>
+import { marked } from "marked"
+interface Props{
+	mdCode: string
+}
+
+const HandWrittenSheet = ({mdCode}: Props) => {
+	
+	return (
+		<div className="HandWrittenSheet">
+			<div id="preview" dangerouslySetInnerHTML={{__html: marked.parse(mdCode, {gfm: true, breaks:true})}}>
+				
+			</div>
 		</div>
-	</div>
-  )
+	)
 }
 
 export default HandWrittenSheet		
