@@ -1,6 +1,6 @@
 import HandWrittenSheet from "./HandWrittenSheet"
 import MDSheet from "./MDSheet"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 const defaultMarkdownText =
 	`# Hola Mundo
@@ -35,11 +35,10 @@ I was inspired by my favorite singer, the one and only: **Johan Sebastian Mastro
 
 const Notebook = () => {
 	const [mdCode, setMdCode] = useState(defaultMarkdownText);
-	const [editorLine, setEditorLine] = useState(0);
 
 	return (
 		<div className="Notebook">
-			<MDSheet code={mdCode} setCode={setMdCode} line={editorLine} setLine={setEditorLine}/>
+			<MDSheet code={mdCode} setCode={setMdCode}/>
 			<HandWrittenSheet mdCode={mdCode}/>
 		</div>
 	)
