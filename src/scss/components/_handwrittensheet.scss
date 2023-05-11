@@ -1,0 +1,129 @@
+.HandWrittenSheet {
+    background-image: url("assets/sheetPattern.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100%;
+
+    flex-basis: 50%;
+    border-radius: 20px;
+    box-shadow: $right-shadow, 40px 0px 40px rgba($color: #000000, $alpha: 0.2) inset;
+	@media (max-width:630px) {
+		height: 50%;
+		box-shadow: $right-shadow, 0px 40px 40px rgba($color: #000000, $alpha: 0.2) inset;
+	}
+}
+#preview {
+    height: 100%;
+    font-family: $reenie;
+    padding: 20px 30px;
+    font-size: 1.4rem;
+    overflow: auto;
+	@media (max-width:630px) {
+		
+		padding: 10px 25px;
+	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-decoration: underline;
+        color: #781a3a;
+        margin: 0.8rem 0;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    a {
+        color: #00005599;
+        display: inline-block;
+        background-color: #ffeb3499;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: relative;
+        box-shadow: 1px 1px 1px;
+        transform: rotateZ(-3deg);
+        transition: all;
+        text-decoration: underline;
+        &:hover {
+            box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.3);
+            transform: rotateX(28deg) rotateZ(-3deg);
+        }
+    }
+
+    ul {
+        margin: 1rem 0.5rem;
+    }
+    li {
+        list-style: circle;
+        list-style-position: inside;
+    }
+
+    pre {
+        color: #555;
+        font-weight: 500;
+        background-color: transparent;
+        padding: 20px 1rem;
+        font-size: 1rem;
+        border: 4px double #44994488;
+        border-radius: 10px;
+        position: relative;
+
+        code {
+            font-family: $vt323;
+        }
+        &::after {
+            color: #333;
+            padding: 2px 5px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            font-family: $reenie;
+            background-color: #8c8;
+            content: "Code";
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            box-shadow: 1px 1px 1px;
+            transform: rotateZ(-2deg);
+        }
+    }
+    p {
+        code {
+            color: #555;
+            font-weight: 500;
+            font-family: $vt323;
+            font-size: 1rem;
+            background-color: #bbbbbb66;
+            padding: 0px 3px;
+            border-radius: 2px;
+        }
+    }
+	blockquote{
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: 600;
+		background-color: #eb64eb99;
+		color:white;
+		width: 80%;
+		margin:auto;
+		padding: 10px;
+		
+		border-radius: 0px 0px 20px 20px;
+	}
+	
+	img{
+		display: block;
+		border: 10px solid white;
+		width: 80%;
+		margin: 1rem auto;
+		transform: rotateZ(-2deg);
+		box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.4);
+	}
+}
